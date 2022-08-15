@@ -1,5 +1,6 @@
-@import '~antd/dist/antd.css';
+@import "~antd/dist/antd.css";
 
 .App {
-  text-align: center;
+    text-align: center;
+    background-image: linear-gradient(to bottom, #6a82db, #63bebe);
 }
