@@ -11,17 +11,17 @@ const GraduationLayout = () => {
                 mode="horizontal"
                 defaultSelectedKeys={[location.pathname]}
             >
-                <Menu.Item key="/">
+                <Menu.Item style={{left:"10px"}} key="/">
                     <Link className="menu-link" to={"/"}>
                         Home
                     </Link>
                 </Menu.Item>
-                <Menu.Item key="/class1">
-                    <Link className="menu-link" style={{ float: "right" }} to={"/class1"}>
+                <Menu.Item style={{ position: "absolute", right: "100px" }} key="/class1">
+                    <Link className="menu-link" to={"/class1"}>
                         Class1
                     </Link>
                 </Menu.Item>
-                <Menu.Item key="/class2">
+                <Menu.Item style={{ position: "absolute", right: "10px" }} key="/class2">
                     <Link className="menu-link" to={"/class2"}>
                         Class2
                     </Link>

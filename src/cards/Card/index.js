@@ -6,10 +6,6 @@ import "./index.css";
 const GraduationCard = (props) => {
     const location = useLocation();
     const navigate = useNavigate();
-    const [params] = useSearchParams();
-    useEffect(() => {
-        console.log(params.get("id"));
-    }, [params.get("id")]);
     return (
         <Card
             className="graduation-card"

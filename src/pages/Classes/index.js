@@ -1,15 +1,22 @@
+import { useEffect, useState } from "react";
 import GraduationCard from "../../cards/Card";
+import { Utils } from "../../utils/utils";
 
 const Classes = (props) => {
-    const project = {
-        name: "姓名",
-        id: "学号",
-        projectTitle: "作品标题",
-        info: "简介内容\n这里是作品的内容",
-    };
+    const d = {
+        list: []
+    }
+    const [data, setData] = useState(d);
+    useEffect(() => {
+        Utils.getData("./works/result.json", setData);
+    }, []);
     return (
         <div>
-            <GraduationCard project = {project} />
+            <ul>
+                {data.list.map((item) =>
+                    item.class === props.class ? <GraduationCard project={item} key={item.id} /> : null
+                )}
+            </ul>
         </div>
     );
 };

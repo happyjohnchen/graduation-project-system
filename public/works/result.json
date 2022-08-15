@@ -1,0 +1,39 @@
+{
+    "list": [
+        {
+            "name": "姓名1",
+            "id": 123,
+            "class":1,
+            "projectTitle": "作品标题1",
+            "info": "简介内容1\n这里是作品的内容"
+        },
+        {
+            "name": "姓名2",
+            "id": 234,
+            "class":2,
+            "projectTitle": "作品标题2",
+            "info": "简介内容2\n这里是作品的内容"
+        },
+        {
+            "name": "姓名3",
+            "id": 345,
+            "class":1,
+            "projectTitle": "作品标题3",
+            "info": "简介内容3\n这里是作品的内容"
+        },
+        {
+            "name": "姓名4",
+            "id": 456,
+            "class":2,
+            "projectTitle": "作品标题4",
+            "info": "简介内容4\n这里是作品的内容"
+        },
+        {
+            "name": "姓名5",
+            "id": 567,
+            "class":1,
+            "projectTitle": "作品标题5",
+            "info": "简介内容5\n这里是作品的内容"
+        }
+    ]
+}
