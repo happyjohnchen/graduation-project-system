@@ -1,7 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Class1 from "./pages/Class1";
-import Class2 from "./pages/Class2";
+import Classes from "./pages/Classes";
 import Home from "./pages/Home";
 import GraduationLayout from "./pages/Layout";
 
@@ -12,8 +11,8 @@ function App() {
           <GraduationLayout/>
                 <Routes>
                     <Route path="/" element={<Home />}></Route>
-                    <Route path="/class1" element={<Class1 />}></Route>
-                    <Route path="/class2" element={<Class2 />}></Route>
+                    <Route path="/class1" element={<Classes class={1} />}></Route>
+                    <Route path="/class2" element={<Classes class={2} />}></Route>
                 </Routes>
             </BrowserRouter>
         </div>

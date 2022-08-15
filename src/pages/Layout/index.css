@@ -1,4 +1,4 @@
-.menu-bar {
-    background-color: gray ; 
-    font-family: 'Times New Roman', Times, serif !important; 
+.menu-link{
+    color: rgb(60, 119, 70);
+    font-weight: bold;
 }
