@@ -4,10 +4,9 @@ import { Utils } from "../../utils/utils";
 import "./index.css";
 
 const Classes = (props) => {
-    const d = {
+    const [data, setData] = useState({
         list: [],
-    };
-    const [data, setData] = useState(d);
+    });
     useEffect(() => {
         Utils.getData("./works/result.json", setData);
     }, []);
