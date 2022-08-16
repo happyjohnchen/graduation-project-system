@@ -4,19 +4,19 @@ import "./index.css";
 
 const GraduationLayout = () => {
     const location = useLocation();
-    return (
+    const layout = (
         <Layout>
             <Menu
                 style={{ background: "#cdd4a6" }}
                 mode="horizontal"
                 defaultSelectedKeys={[location.pathname]}
             >
-                <Menu.Item style={{left:"10px"}} key="/">
-                    <Link className="menu-link" to={"/"}>
+                <Menu.Item style={{ left: "10px" }} key="/">
+                    <Link className="menu-link" to={"/home"}>
                         Home
                     </Link>
                 </Menu.Item>
-                <Menu.Item style={{ position: "absolute", right: "100px" }} key="/class1">
+                <Menu.Item style={{ position: "absolute", right: "120px" }} key="/class1">
                     <Link className="menu-link" to={"/class1"}>
                         Class1
                     </Link>
@@ -29,6 +29,8 @@ const GraduationLayout = () => {
             </Menu>
         </Layout>
     );
+    //开始页不显示菜单
+    return location.pathname === "/" ? null : layout;
 };
 
 export default GraduationLayout;

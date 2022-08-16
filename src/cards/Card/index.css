@@ -1,8 +1,9 @@
 .graduation-card{
-    margin: 20px auto;
+    margin: 10px auto;
+    margin-left: 10px;
+    margin-right: 10px;
     padding: 8px;
-    width: 300px;
     height: 300px;
     border-radius: 15px;
-    background-color: #676767aa;
+    background-color: #676767cc;
 }
