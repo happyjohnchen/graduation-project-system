@@ -10,15 +10,14 @@ const Classes = (props) => {
     const [data, setData] = useState(d);
     useEffect(() => {
         Utils.getData("./works/result.json", setData);
-        console.log(document.body.clientWidth);
     }, []);
     return (
         <div>
             <ul>
                 {data.list.map((item) =>
                     item.class === props.class ? (
-                        <div className="class-graduation-card">
-                            <GraduationCard project={item} key={item.id} />{" "}
+                        <div className="class-graduation-card" key={item.id}>
+                            <GraduationCard project={item} />{" "}
                         </div>
                     ) : null
                 )}
