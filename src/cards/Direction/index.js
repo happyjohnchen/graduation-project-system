@@ -7,12 +7,10 @@ import { useEffect, useState } from "react";
 import { Utils } from "../../utils/utils";
 const DirectionCard = (props) => {
     const navigate = useNavigate();
-    const [data, setData] = useState({});
     const [projects, setProjects] = useState([]);
     const id = props.direction.id;
     useEffect(() => {
         Utils.getData("./works/result.json", (datas) => {
-            setData(datas);
             const ans = [];
             for (const direction of datas.directions) {
                 if (direction.id === id) {
@@ -27,7 +25,7 @@ const DirectionCard = (props) => {
             }
             setProjects(ans);
         });
-    }, []);
+    }, [id]);
     return (
         <div
             className="direction-card-outer"

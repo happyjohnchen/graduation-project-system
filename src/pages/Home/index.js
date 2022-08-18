@@ -1,10 +1,8 @@
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
 import DirectionCard from "../../cards/Direction";
 import { Utils } from "../../utils/utils";
 import "./index.css";
 const Home = () => {
-    const navigate = useNavigate();
     const [data, setData] = useState({
         directions: [],
         list: [],

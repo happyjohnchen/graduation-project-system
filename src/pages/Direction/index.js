@@ -9,13 +9,8 @@ const Direction = (props) => {
     const navigate = useNavigate();
     const id = parseInt(location.pathname.split("/").pop());
     const [projects, setProjects] = useState([]);
-    const [data, setData] = useState({
-        directions: [],
-        list: [],
-    });
     useEffect(() => {
         Utils.getData("/works/result.json", (datas) => {
-            setData(datas);
             const ans = [];
             for (const direction of datas.directions) {
                 if (direction.id === id) {
@@ -31,7 +26,7 @@ const Direction = (props) => {
             setProjects(ans);
             console.log(ans);
         });
-    }, []);
+    }, [id]);
     return (
         <>
             <div style={{ float: "left" }}>

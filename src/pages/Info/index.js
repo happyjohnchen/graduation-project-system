@@ -7,13 +7,9 @@ const Info = () => {
     const location = useLocation();
     const navigate = useNavigate();
     const id = parseInt(location.pathname.split("/").pop());
-    const [data, setData] = useState({
-        list: [],
-    });
     const [project, setProject] = useState({});
     useEffect(() => {
         Utils.getData("../works/result.json", (datas) => {
-            setData(datas);
             for (const p of datas.list) {
                 if (id === p.id) {
                     setProject(p);
@@ -23,7 +19,7 @@ const Info = () => {
             }
             navigate("/class1");
         });
-    }, [project.id]);
+    }, [id, navigate]);
     return (
         <div>
             <div>
