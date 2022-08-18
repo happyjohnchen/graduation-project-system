@@ -5,6 +5,7 @@ import "./index.css";
 
 const Classes = (props) => {
     const [data, setData] = useState({
+        directions: [],
         list: [],
     });
     useEffect(() => {
@@ -12,15 +13,13 @@ const Classes = (props) => {
     }, []);
     return (
         <div>
-            <ul>
-                {data.list.map((item) =>
-                    item.class === props.class ? (
-                        <div className="class-graduation-card" key={item.id}>
-                            <GraduationCard project={item} />{" "}
-                        </div>
-                    ) : null
-                )}
-            </ul>
+            {data.list.map((item) =>
+                item.class === props.class ? (
+                    <div className="class-graduation-card" key={item.id}>
+                        <GraduationCard project={item} />
+                    </div>
+                ) : null
+            )}
         </div>
     );
 };

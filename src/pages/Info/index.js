@@ -6,7 +6,7 @@ import "./index.css";
 const Info = () => {
     const location = useLocation();
     const navigate = useNavigate();
-    const id = location.pathname.split("/").pop();
+    const id = parseInt(location.pathname.split("/").pop());
     const [data, setData] = useState({
         list: [],
     });
@@ -15,7 +15,7 @@ const Info = () => {
         Utils.getData("../works/result.json", (datas) => {
             setData(datas);
             for (const p of datas.list) {
-                if (id == p.id) {
+                if (id === p.id) {
                     setProject(p);
                     console.log(p);
                     return;
@@ -47,7 +47,7 @@ const Info = () => {
                 </div>
             </div>
             <div className="info-detail">
-                <div style={{ "font-size": "xx-large" }}>作品详情</div>
+                <div style={{ fontSize: "xx-large" }}>作品详情</div>
                 <div className="info-card-detail">{project.detail}</div>
             </div>
         </div>
