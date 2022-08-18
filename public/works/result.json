@@ -3,7 +3,7 @@
         {
             "title": "方向1",
             "id": 1,
-            "projects": [123, 234, 345]
+            "projects": [123, 234, 345, 456, 567, 678, 789,890,901,102]
         },
         {
             "title": "方向2",
@@ -27,6 +27,7 @@
             "id": 123,
             "class": 1,
             "projectTitle": "作品标题1",
+            "image": "/imgs/1.jpg",
             "info": "简介内容1\n这里是作品的内容",
             "detail": "这是作品的详情内容"
         },
@@ -35,6 +36,7 @@
             "id": 234,
             "class": 2,
             "projectTitle": "作品标题2",
+            "image": "/imgs/2.jpg",
             "info": "简介内容2\n这里是作品的内容",
             "detail": "这是作品的详情内容"
         },
@@ -43,6 +45,7 @@
             "id": 345,
             "class": 1,
             "projectTitle": "作品标题3",
+            "image": "/imgs/3.jpg",
             "info": "简介内容3\n这里是作品的内容",
             "detail": "这是作品的详情内容"
         },
@@ -51,6 +54,7 @@
             "id": 456,
             "class": 2,
             "projectTitle": "作品标题4",
+            "image": "/imgs/4.jpg",
             "info": "简介内容4\n这里是作品的内容",
             "detail": "这是作品的详情内容"
         },
@@ -59,6 +63,7 @@
             "id": 567,
             "class": 1,
             "projectTitle": "作品标题5",
+            "image": "/imgs/5.jpg",
             "info": "简介内容5\n这里是作品的内容",
             "detail": "这是作品的详情内容"
         },
@@ -67,6 +72,7 @@
             "id": 678,
             "class": 2,
             "projectTitle": "作品标题6",
+            "image": "/imgs/6.jpg",
             "info": "简介内容6\n这里是作品的内容",
             "detail": "这是作品的详情内容"
         },
@@ -75,6 +81,7 @@
             "id": 789,
             "class": 1,
             "projectTitle": "作品标题7",
+            "image": "/imgs/7.jpg",
             "info": "简介内容7\n这里是作品的内容",
             "detail": "这是作品的详情内容"
         },
@@ -83,6 +90,7 @@
             "id": 890,
             "class": 2,
             "projectTitle": "作品标题8",
+            "image": "/imgs/8.jpg",
             "info": "简介内容8\n这里是作品的内容",
             "detail": "这是作品的详情内容"
         },
@@ -91,6 +99,7 @@
             "id": 901,
             "class": 1,
             "projectTitle": "作品标题9",
+            "image": "/imgs/1.jpg",
             "info": "简介内容9\n这里是作品的内容",
             "detail": "这是作品的详情内容"
         },
@@ -99,6 +108,7 @@
             "id": 102,
             "class": 2,
             "projectTitle": "作品标题10",
+            "image": "/imgs/2.jpg",
             "info": "简介内容10\n这里是作品的内容",
             "detail": "这是作品的详情内容"
         }

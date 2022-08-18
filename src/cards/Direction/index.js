@@ -2,8 +2,32 @@ import { Button } from "antd";
 import { ArrowRightOutlined } from "@ant-design/icons";
 import { useNavigate } from "react-router-dom";
 import "./index.css";
+import GraduationCard from "../Card";
+import { useEffect, useState } from "react";
+import { Utils } from "../../utils/utils";
 const DirectionCard = (props) => {
     const navigate = useNavigate();
+    const [data, setData] = useState({});
+    const [projects, setProjects] = useState([]);
+    const id = props.direction.id;
+    useEffect(() => {
+        Utils.getData("./works/result.json", (datas) => {
+            setData(datas);
+            const ans = [];
+            for (const direction of datas.directions) {
+                if (direction.id === id) {
+                    for (const project of direction.projects) {
+                        for (const proj of datas.list) {
+                            if (project === proj.id) {
+                                ans.push(proj);
+                            }
+                        }
+                    }
+                }
+            }
+            setProjects(ans);
+        });
+    }, []);
     return (
         <div
             className="direction-card-outer"
@@ -22,37 +46,19 @@ const DirectionCard = (props) => {
                     type="text"
                 ></Button>
             </div>
-            {props.direction.projects[0] ? (
+            {projects[0] ? (
                 <div className="direction-card-inner">
-                    <div className="direction-card-text">
-                        {props.data.list.map((item) => {
-                            return item.id === props.direction.projects[0]
-                                ? item.projectTitle
-                                : null;
-                        })}
-                    </div>
+                    <GraduationCard project={projects[0]} />
                 </div>
             ) : null}
-            {props.direction.projects[0] ? (
+            {projects[1] ? (
                 <div className="direction-card-inner">
-                    <div className="direction-card-text">
-                        {props.data.list.map((item) => {
-                            return item.id === props.direction.projects[1]
-                                ? item.projectTitle
-                                : null;
-                        })}
-                    </div>
+                    <GraduationCard project={projects[1]} />
                 </div>
             ) : null}
-            {props.direction.projects[0] ? (
+            {projects[2] ? (
                 <div className="direction-card-inner">
-                    <div className="direction-card-text">
-                        {props.data.list.map((item) => {
-                            return item.id === props.direction.projects[2]
-                                ? item.projectTitle
-                                : null;
-                        })}
-                    </div>
+                    <GraduationCard project={projects[2]} />
                 </div>
             ) : null}
         </div>

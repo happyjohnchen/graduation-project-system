@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import GraduationCard from "../../cards/Card";
 import { Utils } from "../../utils/utils";
-import "./index.css";
 const Direction = (props) => {
     const location = useLocation();
     const navigate = useNavigate();
@@ -15,7 +14,7 @@ const Direction = (props) => {
         list: [],
     });
     useEffect(() => {
-        Utils.getData("../works/result.json", (datas) => {
+        Utils.getData("/works/result.json", (datas) => {
             setData(datas);
             const ans = [];
             for (const direction of datas.directions) {
@@ -34,8 +33,8 @@ const Direction = (props) => {
         });
     }, []);
     return (
-        <div>
-            <div style={{ display: "inline" }}>
+        <>
+            <div style={{ float: "left" }}>
                 <Button
                     icon={<ArrowLeftOutlined />}
                     onClick={() => navigate("/home")}
@@ -45,12 +44,16 @@ const Direction = (props) => {
             </div>
             <div style={{ display: "inline" }}>
                 {projects.map((item) => (
-                    <div className="class-graduation-card" key={item.id}>
+                    <div
+                        className="class-graduation-card"
+                        key={item.id}
+                        onClick={() => navigate("/class" + item.class + "/" + item.id)}
+                    >
                         <GraduationCard project={item} />
                     </div>
                 ))}
             </div>
-        </div>
+        </>
     );
 };
 export default Direction;

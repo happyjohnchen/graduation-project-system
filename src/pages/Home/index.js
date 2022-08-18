@@ -21,11 +21,11 @@ const Home = () => {
                 <div className="home-intro-card"></div>
             </div>
             <div className="home-img"></div>
-                {data.directions.map((item) => (
-                    <DirectionCard key={item.id} direction={item} data={data}>
-                        {item.title}
-                    </DirectionCard>
-                ))}
+            {data.directions.map((item) => (
+                <DirectionCard key={item.id} direction={item} data={data}>
+                    {item.title}
+                </DirectionCard>
+            ))}
         </div>
     );
 };
