@@ -29,7 +29,7 @@ const Info = () => {
             <div>
                 <div className="info-card">
                     <div className="info-card-title">视频</div>
-                    <div className="info-card-content">视频内容</div>
+                    <div className="info-card-content">这里是视频内容</div>
                 </div>
                 <div className="info-card">
                     <div className="info-card-title">作品简介</div>
@@ -39,11 +39,11 @@ const Info = () => {
             <div>
                 <div className="info-card">
                     <div className="info-card-title">作者图片</div>
-                    <div className="info-card-content"></div>
+                    <div className="info-card-content">这是是作者的照片</div>
                 </div>
                 <div className="info-card">
                     <div className="info-card-title">作者介绍</div>
-                    <div className="info-card-content"></div>
+                    <div className="info-card-content">这里是作者的介绍</div>
                 </div>
             </div>
             <div className="info-detail">
