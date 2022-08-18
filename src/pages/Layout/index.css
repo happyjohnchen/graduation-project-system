@@ -1,5 +1,13 @@
-.menu-link{
+.menu-link {
     color: rgb(60, 119, 70);
     font-weight: bold;
     font-size: x-large;
+}
+
+.menu-hidden-bar {
+    width: 100px;
+    height: 10px;
+    border-radius: 5px;
+    margin: 3px auto;
+    background-color: white;
 }
