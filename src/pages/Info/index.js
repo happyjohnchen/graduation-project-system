@@ -48,7 +48,7 @@ const Info = () => {
             </div>
             <div className="info-detail">
                 <div style={{ "font-size": "xx-large" }}>作品详情</div>
-                <div>{project.detail}</div>
+                <div className="info-card-detail">{project.detail}</div>
             </div>
         </div>
     );

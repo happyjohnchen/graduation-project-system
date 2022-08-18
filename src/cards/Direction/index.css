@@ -1,0 +1,55 @@
+.direction-card-outer {
+    margin: 20px auto;
+    height: 300px;
+    width: 80%;
+    border-radius: 30px;
+    background-color: #f0ffff88;
+    position: relative;
+}
+
+.direction-card-title-color {
+    background-color: #acb86b;
+    height: 25px;
+    width: 8px;
+    border-radius: 4px;
+    float: left;
+    margin-left: 30px;
+    margin-top: 18px;
+}
+
+.direction-card-title-arrow {
+    float: right;
+    margin-top: 18px;
+}
+
+.direction-card-title {
+    font-size: 24px;
+    color: black;
+    text-align: left;
+    margin-left: 50px;
+    padding-top: 10px;
+}
+
+.direction-card-inner {
+    margin: 10px auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    height: 70%;
+    width: 30%;
+    border-radius: 15px;
+    background-color: #676767cc;
+    display: inline-block;
+}
+
+.direction-card-text {
+    font-size: large;
+    background-color: #aaaaaaaa;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
