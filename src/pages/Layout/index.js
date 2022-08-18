@@ -11,7 +11,7 @@ const GraduationLayout = ({ children }) => {
             <Layout>
                 {menuHidden ? null : (
                     <Menu
-                        style={{ background: "#cdd4a6" }}
+                        style={{ background: "#cdd4a6", border: "#cdd4a6" }}
                         mode="horizontal"
                         defaultSelectedKeys={[location.pathname]}
                     >
@@ -46,7 +46,7 @@ const GraduationLayout = ({ children }) => {
         </>
     );
     //开始页不显示菜单
-    return location.pathname === "/" ? null : layout;
+    return location.pathname === "/" ? <>{children}</> : layout;
 };
 
 export default GraduationLayout;
