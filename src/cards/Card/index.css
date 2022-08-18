@@ -2,7 +2,8 @@
     margin: 10px auto;
     margin-left: 10px;
     margin-right: 10px;
-    height: 200px;
+    max-width: 30vw;
+    max-height: 30vw;
     border-radius: 15px;
     background-color: #676767cc;
     position: relative;

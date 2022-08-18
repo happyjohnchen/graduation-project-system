@@ -1,0 +1,36 @@
+.direction-title {
+    font-size: 36px;
+    color: black;
+    text-align: left;
+    margin-left: 120px;
+    padding-top: 50px;
+}
+.direction-title-color {
+    background-color: #acb86b;
+    height: 40px;
+    width: 8px;
+    border-radius: 4px;
+    float: left;
+    margin-left: 30px;
+    margin-top: 62px;
+}
+.direction-back-color {
+    float: left;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.direction-background {
+    display: inline-table;
+    background-color: #f0ffff88;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.direction-count-text{
+    font-size: xx-large;
+    padding: 20px;
+}

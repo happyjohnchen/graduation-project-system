@@ -5,7 +5,7 @@
     height: 40vw;
     padding: 25px;
     margin: 20px;
-    display: inline-block;
+    display:inline-table;
 }
 
 .info-card-title {
@@ -33,3 +33,7 @@
     color: black;
 }
  
+.info-image{
+    max-width: 100%;
+    max-height: 100%;
+}

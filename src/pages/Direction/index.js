@@ -4,13 +4,16 @@ import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import GraduationCard from "../../cards/Card";
 import { Utils } from "../../utils/utils";
-const Direction = (props) => {
+import "./index.css";
+const Direction = () => {
     const location = useLocation();
     const navigate = useNavigate();
     const id = parseInt(location.pathname.split("/").pop());
+    const [data, setData] = useState({ directions: [] });
     const [projects, setProjects] = useState([]);
     useEffect(() => {
         Utils.getData("/works/result.json", (datas) => {
+            setData(datas);
             const ans = [];
             for (const direction of datas.directions) {
                 if (direction.id === id) {
@@ -24,12 +27,11 @@ const Direction = (props) => {
                 }
             }
             setProjects(ans);
-            console.log(ans);
         });
     }, [id]);
     return (
         <>
-            <div style={{ float: "left" }}>
+            <div className="direction-back-color">
                 <Button
                     icon={<ArrowLeftOutlined />}
                     onClick={() => navigate("/home")}
@@ -37,7 +39,11 @@ const Direction = (props) => {
                     type="text"
                 ></Button>
             </div>
-            <div style={{ display: "inline" }}>
+            <div className="direction-title-color" />
+            <div className="direction-title">
+                {data.directions.map((item) => (item.id === id ? item.title : null))}
+            </div>
+            <div className="direction-background">
                 {projects.map((item) => (
                     <div
                         className="class-graduation-card"
@@ -47,6 +53,7 @@ const Direction = (props) => {
                         <GraduationCard project={item} />
                     </div>
                 ))}
+                <div className="direction-count-text">共{projects.length}条</div>
             </div>
         </>
     );
