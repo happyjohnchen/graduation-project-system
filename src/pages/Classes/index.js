@@ -5,6 +5,7 @@ import { Utils } from "../../utils/utils";
 import "./index.css";
 
 const Classes = (props) => {
+    document.title = "毕业设计-" + props.class + "班";
     const navigate = useNavigate();
     const location = useLocation();
     const [data, setData] = useState({

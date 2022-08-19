@@ -8,6 +8,7 @@
     background-color: #676767cc;
     position: relative;
     display: inline-block;
+    cursor: pointer;
 }
 
 .graduation-card-text {

@@ -5,6 +5,7 @@
     border-radius: 30px;
     background-color: #f0ffff88;
     position: relative;
+    cursor: pointer;
 }
 
 .direction-card-title-color {
@@ -15,12 +16,6 @@
     float: left;
     margin-left: 30px;
     margin-top: 18px;
-}
-
-.direction-card-title-arrow {
-    position: absolute;
-    margin-left: 92%;
-    margin-top: -40px;
 }
 
 .direction-card-title {

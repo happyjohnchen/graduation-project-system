@@ -4,6 +4,7 @@ import { Utils } from "../../utils/utils";
 import "./index.css";
 
 const Info = () => {
+    document.title = "毕业设计-详情";
     const location = useLocation();
     const navigate = useNavigate();
     const id = parseInt(location.pathname.split("/").pop());

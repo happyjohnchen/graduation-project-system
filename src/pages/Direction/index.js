@@ -41,7 +41,14 @@ const Direction = () => {
             </div>
             <div className="direction-title-color" />
             <div className="direction-title">
-                {data.directions.map((item) => (item.id === id ? item.title : null))}
+                {data.directions.map((item) => {
+                    if (item.id === id) {
+                        document.title = "毕业设计-" + item.title;
+                        return item.title;
+                    } else {
+                        return null;
+                    }
+                })}
             </div>
             <div className="direction-background">
                 {projects.map((item) => (

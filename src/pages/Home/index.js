@@ -3,6 +3,7 @@ import DirectionCard from "../../cards/Direction";
 import { Utils } from "../../utils/utils";
 import "./index.css";
 const Home = () => {
+    document.title = "毕业设计-首页";
     const [data, setData] = useState({
         directions: [],
         list: [],
