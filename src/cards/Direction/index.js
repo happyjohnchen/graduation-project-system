@@ -10,21 +10,19 @@ const DirectionCard = (props) => {
     const [projects, setProjects] = useState([]);
     const id = props.direction.id;
     useEffect(() => {
-        Utils.getData("./works/result.json", (datas) => {
-            const ans = [];
-            for (const direction of datas.directions) {
-                if (direction.id === id) {
-                    for (const project of direction.projects) {
-                        for (const proj of datas.list) {
-                            if (project === proj.id) {
-                                ans.push(proj);
-                            }
+        const ans = [];
+        for (const direction of props.data.directions) {
+            if (direction.id === id) {
+                for (const project of direction.projects) {
+                    for (const proj of props.data.list) {
+                        if (project === proj.id) {
+                            ans.push(proj);
                         }
                     }
                 }
             }
-            setProjects(ans);
-        });
+        }
+        setProjects(ans);
     }, [id]);
     return (
         <div
