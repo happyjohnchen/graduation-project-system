@@ -1,0 +1,18 @@
+.not-found-title {
+    font-size: 100px;
+    font-weight: 900;
+    color: white;
+}
+.not-found-message {
+    font-size: 60px;
+    font-weight: 500;
+    color: white;
+}
+.not-found-button {
+    font-size: 36px;
+    font-weight: 500;
+    color: gray;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 15px;
+}

@@ -5,6 +5,7 @@ import Direction from "./pages/Direction";
 import Home from "./pages/Home";
 import Info from "./pages/Info";
 import GraduationLayout from "./pages/Layout";
+import NotFound from "./pages/NotFound";
 import Start from "./pages/Start";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
                         <Route path="/class2" element={<Classes class={2} />}></Route>
                         <Route path="/class2/*" element={<Info />}></Route>
                         <Route path="/direction/*" element={<Direction />}></Route>
+                        <Route path="*" element={<NotFound />}></Route>
                     </Routes>
                 </GraduationLayout>
             </BrowserRouter>
