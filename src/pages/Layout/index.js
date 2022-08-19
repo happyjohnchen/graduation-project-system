@@ -1,18 +1,35 @@
 import { Layout, Menu } from "antd";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./index.css";
 
 const GraduationLayout = ({ children }) => {
     const location = useLocation();
     const [menuHidden, setMenuHidden] = useState(false);
+    const [keys, setKeys] = useState(["/home"]);
+    useEffect(() => {
+        switch (location.pathname) {
+            case "/home":
+                setKeys(["/home"]);
+                break;
+            case "/class1":
+                setKeys(["/class1"]);
+                break;
+            case "/class2":
+                setKeys(["/class2"]);
+                break;
+            default:
+                setKeys([]);
+        }
+    }, [location.pathname]);
     const layout = (
         <>
             <Layout>
                 <Menu
+                    id="menu"
                     style={{ background: "#cdd4a6", border: "#cdd4a6" }}
                     mode="horizontal"
-                    defaultSelectedKeys={[location.pathname]}
+                    selectedKeys={keys}
                     hidden={menuHidden}
                 >
                     <Menu.Item style={{ left: "10px" }} key="/home">
