@@ -4,7 +4,6 @@ import { Utils } from "../../utils/utils";
 import "./index.css";
 
 const Info = () => {
-    document.title = "毕业设计-详情";
     const location = useLocation();
     const navigate = useNavigate();
     const id = parseInt(location.pathname.split("/").pop());
@@ -15,6 +14,7 @@ const Info = () => {
                 if (id === p.id) {
                     setProject(p);
                     console.log(p);
+                    document.title = "毕业设计-" + p.name;
                     return;
                 }
             }
@@ -29,7 +29,11 @@ const Info = () => {
             </div>
             <div className="info-card">
                 <div className="info-card-title">作者介绍</div>
-                <div className="info-card-content">这里是作者的介绍</div>
+                <div className="info-card-content">
+                    {project.name + ", " + project.class + "班"}
+                    <br />
+                    这里是作者的介绍
+                </div>
             </div>
             <div className="info-card">
                 <div className="info-card-title">视频</div>
