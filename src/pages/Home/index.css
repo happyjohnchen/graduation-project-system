@@ -1,5 +1,5 @@
 .home-title {
-    font-size: 120px;
+    font-size: 10vw;
     color: white;
     text-align: center;
     padding-top: 8vw;
@@ -10,7 +10,7 @@
     width: 40%;
     height: 30vw;
     color: black;
-    float:left;
+    float: left;
 }
 
 .home-intro-card {
@@ -24,7 +24,7 @@
     display: inline-block;
 }
 
-.home-img{
+.home-img {
     margin: 40px auto;
     height: 300px;
     width: 80%;
