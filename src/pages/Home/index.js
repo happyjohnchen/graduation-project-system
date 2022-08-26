@@ -17,9 +17,15 @@ const Home = () => {
                 <div className="home-intro">
                     <div className="home-title">绽放</div>
                 </div>
-                <div className="home-intro-card"></div>
+                <div className="home-intro-card">
+                    这里是首页的介绍说明文字
+                    <br />
+                    此处将要介绍毕业设计的大体内容
+                </div>
             </div>
-            <div className="home-img"></div>
+            <div>
+                <img src="/imgs/1.jpg" className="home-img" />
+            </div>
             {data.directions.map((item) => (
                 <DirectionCard key={item.id} direction={item} data={data}>
                     {item.title}
