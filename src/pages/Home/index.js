@@ -25,7 +25,7 @@ const Home = () => {
                 </div>
             </div>
             <div>
-                <img src="/imgs/1.jpg" className="home-img" />
+                <img src="/imgs/1.jpg" className="home-img" alt="首页介绍图片"/>
             </div>
             {data.directions.map((item) => (
                 <DirectionCard key={item.id} direction={item} data={data}>

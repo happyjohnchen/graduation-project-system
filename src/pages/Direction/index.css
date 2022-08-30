@@ -30,7 +30,8 @@
     padding-top: 30px;
     padding-bottom: 30px;
 }
-.direction-count-text{
-    font-size: xx-large;
+.direction-count-text {
+    font-size: x-large;
+    color: darkgray;
     padding: 20px;
 }
