@@ -25,12 +25,15 @@ const Home = () => {
                 </div>
             </div>
             <div>
-                <img src="/imgs/1.jpg" className="home-img" alt="首页介绍图片"/>
+                <img src="/imgs/1.jpg" className="home-img" alt="首页班级合照" />
             </div>
             {data.directions.map((item) => (
-                <DirectionCard key={item.id} direction={item} data={data}>
-                    {item.title}
-                </DirectionCard>
+                <>
+                    <div className="direction-devider"></div>
+                    <DirectionCard key={item.id} direction={item} data={data}>
+                        {item.title}
+                    </DirectionCard>
+                </>
             ))}
         </div>
     );

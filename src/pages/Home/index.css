@@ -33,3 +33,11 @@
     background-color: #4b4b4b;
     position: relative;
 }
+
+.direction-devider {
+    margin: 20px auto;
+    height: 8px;
+    border-radius: 4px;
+    width: 80%;
+    background-color: #f0ffff88;
+}
