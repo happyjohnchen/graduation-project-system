@@ -53,7 +53,7 @@ const Direction = () => {
             <div className="direction-background">
                 {projects.map((item) => (
                     <div
-                        className="class-graduation-card"
+                        className="direction-graduation-card"
                         key={item.id}
                         onClick={() => navigate("/class" + item.class + "/" + item.id)}
                     >
