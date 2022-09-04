@@ -1,4 +1,35 @@
-.class-graduation-card{
+.class-title {
+    font-size: 48px;
+    font-weight: 600;
+    color: white;
+    text-align: left;
+    margin-left: 100px;
+    padding-top: 0px;
+}
+
+.class-title-color {
+    background-color: #acb86b;
+    height: 50px;
+    width: 20px;
+    border-radius: 10px;
+    float: left;
+    margin-left: 60px;
+    margin-top: 15px;
+}
+
+.class-background {
+    display: inline-table;
+    background-color: #f0ffff44;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.class-graduation-card {
     display: inline-table;
     width: 30%;
 }

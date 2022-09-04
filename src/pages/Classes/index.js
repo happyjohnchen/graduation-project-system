@@ -16,7 +16,9 @@ const Classes = (props) => {
         Utils.getData("./works/result.json", setData);
     }, []);
     return (
-        <div>
+        <div className="class-background">
+            <div className="class-title-color" />
+            <div className="class-title">Class{props.class}</div>
             {data.list.map((item) =>
                 item.class === props.class ? (
                     <div
