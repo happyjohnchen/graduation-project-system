@@ -1,9 +1,9 @@
 .info-card {
-    border-radius: 15px;
+    border-radius: 50px;
     background-color: #f0ffff88;
     width: 40%;
-    height: 40vw;
-    padding: 25px;
+    height: 30vw;
+    padding: 30px;
     margin: 20px;
     display:inline-table;
 }
@@ -18,7 +18,7 @@
 }
 
 .info-detail {
-    padding: auto;
+    padding: 80px 10px 100px 10px;
     margin: auto;
     color: white;
     text-align: center;
@@ -26,9 +26,9 @@
 }
 
 .info-card-detail{
-    margin: 25px;
-    padding: 25px;
-    border-radius: 15px;
+    margin: 30px 100px 30px 100px;
+    padding: 30px;
+    border-radius: 50px;
     background-color: #f0ffff88;
     color: black;
 }
