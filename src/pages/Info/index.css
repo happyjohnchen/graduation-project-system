@@ -5,7 +5,7 @@
     height: 30vw;
     padding: 30px;
     margin: 20px;
-    display:inline-table;
+    display: inline-table;
 }
 
 .info-card-title {
@@ -25,15 +25,39 @@
     font-size: large;
 }
 
-.info-card-detail{
+.info-card-detail {
     margin: 30px 100px 30px 100px;
     padding: 30px;
     border-radius: 50px;
     background-color: #f0ffff88;
     color: black;
 }
- 
-.info-image{
+
+.info-image {
     max-width: 100%;
     max-height: 100%;
+    border-radius: 30px;
+}
+.info-intro {
+    font-size: 24px;
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 30px;
+}
+.info-video {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 30px;
+}
+.info-project {
+    font-size: 20px;
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.info-detail-image {
+    width: 40%;
+    margin: 20px;
+    border-radius: 30px;
 }

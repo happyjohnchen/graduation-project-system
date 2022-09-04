@@ -27,90 +27,120 @@
             "id": 123,
             "class": 1,
             "projectTitle": "作品标题1",
+            "teacher": "老师",
             "image": "/imgs/1.jpg",
+            "video": "/videos/1.mp4",
             "info": "简介内容1\n这里是作品的内容",
-            "detail": "这是作品的详情内容"
+            "detail": "这是作品的详情内容",
+            "images": ["/imgs/1.jpg", "/imgs/2.jpg", "/imgs/3.jpg", "/imgs/4.jpg", "/imgs/5.jpg"]
         },
         {
             "name": "姓名2",
             "id": 234,
             "class": 2,
             "projectTitle": "作品标题2",
+            "teacher": "老师",
             "image": "/imgs/2.jpg",
+            "video": "/videos/1.mp4",
             "info": "简介内容2\n这里是作品的内容",
-            "detail": "这是作品的详情内容"
+            "detail": "这是作品的详情内容",
+            "images": ["/imgs/1.jpg", "/imgs/2.jpg", "/imgs/3.jpg", "/imgs/4.jpg", "/imgs/5.jpg"]
         },
         {
             "name": "姓名3",
             "id": 345,
             "class": 1,
             "projectTitle": "作品标题3",
+            "teacher": "老师",
             "image": "/imgs/3.jpg",
+            "video": "/videos/1.mp4",
             "info": "简介内容3\n这里是作品的内容",
-            "detail": "这是作品的详情内容"
+            "detail": "这是作品的详情内容",
+            "images": ["/imgs/1.jpg", "/imgs/2.jpg", "/imgs/3.jpg", "/imgs/4.jpg", "/imgs/5.jpg"]
         },
         {
             "name": "姓名4",
             "id": 456,
             "class": 2,
             "projectTitle": "作品标题4",
+            "teacher": "老师",
             "image": "/imgs/4.jpg",
+            "video": "/videos/1.mp4",
             "info": "简介内容4\n这里是作品的内容",
-            "detail": "这是作品的详情内容"
+            "detail": "这是作品的详情内容",
+            "images": ["/imgs/1.jpg", "/imgs/2.jpg", "/imgs/3.jpg", "/imgs/4.jpg", "/imgs/5.jpg"]
         },
         {
             "name": "姓名5",
             "id": 567,
             "class": 1,
             "projectTitle": "作品标题5",
+            "teacher": "老师",
             "image": "/imgs/5.jpg",
+            "video": "/videos/1.mp4",
             "info": "简介内容5\n这里是作品的内容",
-            "detail": "这是作品的详情内容"
+            "detail": "这是作品的详情内容",
+            "images": ["/imgs/1.jpg", "/imgs/2.jpg", "/imgs/3.jpg", "/imgs/4.jpg", "/imgs/5.jpg"]
         },
         {
             "name": "姓名6",
             "id": 678,
             "class": 2,
             "projectTitle": "作品标题6",
+            "teacher": "老师",
             "image": "/imgs/6.jpg",
+            "video": "/videos/1.mp4",
             "info": "简介内容6\n这里是作品的内容",
-            "detail": "这是作品的详情内容"
+            "detail": "这是作品的详情内容",
+            "images": ["/imgs/1.jpg", "/imgs/2.jpg", "/imgs/3.jpg", "/imgs/4.jpg", "/imgs/5.jpg"]
         },
         {
             "name": "姓名7",
             "id": 789,
             "class": 1,
             "projectTitle": "作品标题7",
+            "teacher": "老师",
             "image": "/imgs/7.jpg",
+            "video": "/videos/1.mp4",
             "info": "简介内容7\n这里是作品的内容",
-            "detail": "这是作品的详情内容"
+            "detail": "这是作品的详情内容",
+            "images": ["/imgs/1.jpg", "/imgs/2.jpg", "/imgs/3.jpg", "/imgs/4.jpg", "/imgs/5.jpg"]
         },
         {
             "name": "姓名8",
             "id": 890,
             "class": 2,
             "projectTitle": "作品标题8",
+            "teacher": "老师",
             "image": "/imgs/8.jpg",
+            "video": "/videos/1.mp4",
             "info": "简介内容8\n这里是作品的内容",
-            "detail": "这是作品的详情内容"
+            "detail": "这是作品的详情内容",
+            "images": ["/imgs/1.jpg", "/imgs/2.jpg", "/imgs/3.jpg", "/imgs/4.jpg", "/imgs/5.jpg"]
         },
         {
             "name": "姓名9",
             "id": 901,
             "class": 1,
             "projectTitle": "作品标题9",
+            "teacher": "老师",
             "image": "/imgs/1.jpg",
+            "video": "/videos/1.mp4",
             "info": "简介内容9\n这里是作品的内容",
-            "detail": "这是作品的详情内容"
+            "detail": "这是作品的详情内容",
+            "images": ["/imgs/1.jpg", "/imgs/2.jpg", "/imgs/3.jpg", "/imgs/4.jpg", "/imgs/5.jpg"]
         },
         {
             "name": "姓名10",
             "id": 102,
             "class": 2,
             "projectTitle": "作品标题10",
+            "teacher": "老师",
             "image": "/imgs/2.jpg",
+            "video": "/videos/1.mp4",
             "info": "简介内容10\n这里是作品的内容",
-            "detail": "这是作品的详情内容"
+            "detail": "这是作品的详情内容",
+            "images": ["/imgs/1.jpg", "/imgs/2.jpg", "/imgs/3.jpg", "/imgs/4.jpg", "/imgs/5.jpg"]
         }
     ]
 }
