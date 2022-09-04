@@ -31,12 +31,12 @@ const Home = () => {
                 <img src="/imgs/1.jpg" className="home-img" alt="首页班级合照" />
             </div>
             {data.directions.map((item) => (
-                <>
+                <div key={item.id}>
                     <div className="direction-devider"></div>
-                    <DirectionCard key={item.id} direction={item} data={data}>
+                    <DirectionCard direction={item} data={data}>
                         {item.title}
                     </DirectionCard>
-                </>
+                </div>
             ))}
         </div>
     );
