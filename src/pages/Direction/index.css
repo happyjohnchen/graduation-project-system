@@ -1,15 +1,16 @@
 .direction-title {
     font-size: 36px;
-    color: black;
+    color: white;
     text-align: left;
-    margin-left: 120px;
+    font-weight: 600;
+    margin-left: 140px;
     padding-top: 50px;
 }
 .direction-title-color {
     background-color: #acb86b;
     height: 40px;
-    width: 8px;
-    border-radius: 4px;
+    width: 20px;
+    border-radius: 10px;
     float: left;
     margin-left: 30px;
     margin-top: 62px;
@@ -32,6 +33,11 @@
 }
 .direction-count-text {
     font-size: x-large;
-    color: darkgray;
+    color: black;
     padding: 20px;
+}
+
+.class-graduation-card {
+    display: inline-table;
+    width: 30%;
 }
