@@ -14,14 +14,15 @@
 }
 
 .home-intro-card {
-    font-size: large;
+    font-size: 28px;
+    text-align: left;
     margin: 25px;
     padding: 25px;
     border-radius: 30px;
     width: 30%;
     height: 30vw;
-    background-color: #f0ffff88;
-    color: black;
+    background-color: #f0ffff33;
+    color: white;
     display: inline-block;
 }
 
@@ -39,5 +40,5 @@
     height: 8px;
     border-radius: 4px;
     width: 80%;
-    background-color: #f0ffff88;
+    background-color: #f0ffff33;
 }

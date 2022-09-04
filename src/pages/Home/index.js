@@ -18,10 +18,13 @@ const Home = () => {
                     <div className="home-title">绽放</div>
                 </div>
                 <div className="home-intro-card">
-                    这里是首页的介绍说明文字
+                    北京工业大学
                     <br />
-                    此处将要介绍毕业设计的大体内容
-                    2019届数字媒体技术学生毕业设计的大体内容在此处展示
+                    19级数字媒体技术
+                    <br />
+                    190811、190812班
+                    <br />
+                    在xxx老师、xxx老师、xxx老师、xxx老师、xxx老师的指导教学下完成的毕业设计作品，现展示如下
                 </div>
             </div>
             <div>
