@@ -11,3 +11,10 @@
     margin: 3px auto;
     background-color: white;
 }
+
+.page-bottom {
+    height: 200px;
+    background-color: #acb86b;
+    color: white;
+    padding:20px;
+}

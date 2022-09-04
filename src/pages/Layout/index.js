@@ -58,7 +58,15 @@ const GraduationLayout = ({ children }) => {
                 </div>
             </Layout>
             {children}
-            <div style={{ height: "200px", backgroundColor: "#cdd4a6" }}></div>
+            <div className="page-bottom">
+                版权所有 © 北京工业大学
+                <br />
+                京公网安备：110402430086 京ICP备：14043795号-2
+                <br />
+                COPYRIGHT © BEIJING UNIVERSITY OF TECHNOLOGY
+                <br />
+                Site designed by BODA
+            </div>
         </>
     );
     //开始页不显示菜单
