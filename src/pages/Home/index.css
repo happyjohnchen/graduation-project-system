@@ -4,6 +4,7 @@
     text-align: center;
     padding-top: 8vw;
     padding-left: 20vw;
+    font-family: 'head';
 }
 .home-intro {
     margin: 25px;
@@ -24,6 +25,7 @@
     background-color: #f0ffff33;
     color: white;
     display: inline-block;
+    font-family: 'txt';
 }
 
 .home-img {

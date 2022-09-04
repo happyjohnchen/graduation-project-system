@@ -5,6 +5,7 @@
     font-weight: 600;
     margin-left: 140px;
     padding-top: 50px;
+    font-family: 'title';
 }
 .direction-title-color {
     background-color: #acb86b;
@@ -35,6 +36,7 @@
     font-size: x-large;
     color: black;
     padding: 20px;
+    font-family: 'title';
 }
 
 .direction-graduation-card {

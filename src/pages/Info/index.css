@@ -10,6 +10,7 @@
 
 .info-card-title {
     font-size: xx-large;
+    font-family: 'title';
 }
 
 .info-card-content {
@@ -22,7 +23,8 @@
     margin: auto;
     color: white;
     text-align: center;
-    font-size: large;
+    font-size: xx-large;
+    font-family: 'head';
 }
 
 .info-card-detail {
@@ -43,6 +45,7 @@
     background-color: aliceblue;
     padding: 20px;
     border-radius: 30px;
+    font-family: 'txt';
 }
 .info-video {
     max-width: 100%;
@@ -54,6 +57,7 @@
     background-color: aliceblue;
     padding: 20px;
     border-radius: 30px;
+    font-family: 'head';
 }
 
 .info-detail-image {

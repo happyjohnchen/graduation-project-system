@@ -15,7 +15,7 @@ const Home = () => {
         <div>
             <div>
                 <div className="home-intro">
-                    <div className="home-title">起航</div>
+                    <div className="home-title">启航</div>
                 </div>
                 <div className="home-intro-card">
                     北京工业大学

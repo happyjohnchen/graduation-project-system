@@ -32,17 +32,23 @@ const GraduationLayout = ({ children }) => {
                     selectedKeys={keys}
                     hidden={menuHidden}
                 >
-                    <Menu.Item style={{ left: "10px" }} key="/home">
+                    <Menu.Item style={{ left: "50px", fontFamily: "eng" }} key="/home">
                         <Link className="menu-link" to={"/home"}>
                             Home
                         </Link>
                     </Menu.Item>
-                    <Menu.Item style={{ position: "absolute", right: "120px" }} key="/class1">
+                    <Menu.Item
+                        style={{ position: "absolute", right: "280px", fontFamily: "eng" }}
+                        key="/class1"
+                    >
                         <Link className="menu-link" to={"/class1"}>
                             Class1
                         </Link>
                     </Menu.Item>
-                    <Menu.Item style={{ position: "absolute", right: "10px" }} key="/class2">
+                    <Menu.Item
+                        style={{ position: "absolute", right: "100px", fontFamily: "eng" }}
+                        key="/class2"
+                    >
                         <Link className="menu-link" to={"/class2"}>
                             Class2
                         </Link>

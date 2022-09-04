@@ -4,3 +4,20 @@
     text-align: center;
     background-image: linear-gradient(to bottom, #6a82db, #d8b7c0);
 }
+
+@font-face {
+    font-family: eng;
+    src: url("../public/fonts/eng.TTF");
+}
+@font-face {
+    font-family: head;
+    src: url("../public/fonts/head.TTF");
+}
+@font-face {
+    font-family: txt;
+    src: url("../public/fonts/text.TTF");
+}
+@font-face {
+    font-family: title;
+    src: url("../public/fonts/title.TTF");
+}
