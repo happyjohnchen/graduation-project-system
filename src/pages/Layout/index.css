@@ -1,5 +1,5 @@
 .menu-link {
-    color: rgb(60, 119, 70);
+    color: #acb86b;
     font-weight: bold;
     font-size: x-large;
 }
@@ -16,7 +16,7 @@
     height: 200px;
     background-color: #acb86b;
     color: white;
-    padding:20px;
+    padding: 20px;
     font-size: large;
-    font-family: 'head';
+    font-family: "head";
 }

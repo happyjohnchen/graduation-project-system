@@ -27,7 +27,7 @@ const GraduationLayout = ({ children }) => {
             <Layout>
                 <Menu
                     id="menu"
-                    style={{ background: "#cdd4a6", border: "#cdd4a6" }}
+                    style={{ background: "#acb86b", border: "#cdd4a6" }}
                     mode="horizontal"
                     selectedKeys={keys}
                     hidden={menuHidden}
@@ -54,7 +54,7 @@ const GraduationLayout = ({ children }) => {
                         </Link>
                     </Menu.Item>
                 </Menu>
-                <div style={{ background: "#cdd4a6" }}>
+                <div style={{ background: "#acb86b" }}>
                     <div
                         className="menu-hidden-bar"
                         onClick={() => {

@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HistoryRouter, history } from "./utils/history";
 import "./App.css";
 import Classes from "./pages/Classes";
 import Direction from "./pages/Direction";
@@ -11,7 +12,7 @@ import Start from "./pages/Start";
 function App() {
     return (
         <div className="App">
-            <BrowserRouter>
+            <HistoryRouter history={history}>
                 <GraduationLayout>
                     <Routes>
                         <Route path="/" element={<Start />}></Route>
@@ -24,7 +25,7 @@ function App() {
                         <Route path="*" element={<NotFound />}></Route>
                     </Routes>
                 </GraduationLayout>
-            </BrowserRouter>
+            </HistoryRouter>
         </div>
     );
 }
