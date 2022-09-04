@@ -22,7 +22,7 @@ const Info = () => {
         });
     }, [id, navigate]);
     return (
-        <div>
+        <div style={{ paddingTop: "20px" }}>
             <div className="info-card">
                 <div className="info-card-title">作品图片</div>
                 <div className="info-card-content">
@@ -60,7 +60,7 @@ const Info = () => {
                 </div>
             </div>
             <div className="info-detail">
-                <div style={{ fontSize: "xx-large" }}>作品详情</div>
+                <div>作品详情</div>
                 <div className="info-card-detail">
                     {project.images.map((item) => (
                         <img className="info-detail-image" src={item} />
