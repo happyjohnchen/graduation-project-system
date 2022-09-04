@@ -19,17 +19,19 @@ const Classes = (props) => {
         <div className="class-background">
             <div className="class-title-color" />
             <div className="class-title">Class{props.class}</div>
-            {data.list.map((item) =>
-                item.class === props.class ? (
-                    <div
-                        className="class-graduation-card"
-                        key={item.id}
-                        onClick={() => navigate(location.pathname + "/" + item.id)}
-                    >
-                        <GraduationCard project={item} />
-                    </div>
-                ) : null
-            )}
+            <div className="class-project-cards">
+                {data.list.map((item) =>
+                    item.class === props.class ? (
+                        <div
+                            className="class-graduation-card"
+                            key={item.id}
+                            onClick={() => navigate(location.pathname + "/" + item.id)}
+                        >
+                            <GraduationCard project={item} />
+                        </div>
+                    ) : null
+                )}
+            </div>
         </div>
     );
 };
